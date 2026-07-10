@@ -298,7 +298,7 @@ This table presents the **Top-1 IoU** and **Top-3 IoU** results for different mo
 | PTv2       | 0.466         | 0.741         | 0.445          | 0.688          | TBA        | [Wandb](https://api.wandb.ai/links/streakfull-technical-university-of-munich/nbcyphpg) |
 
 **Notes:**
-- All **Model Checkpoints** will be released soon.
+- All **model checkpoints** are [here](https://drive.google.com/drive/folders/1mN4z7cBo0KuJ2FEWtkEDCPhW6MvOYRbX?usp=sharing).
 - Implementation code can be found on [Pointcept](https://github.com/Pointcept/Pointcept).
 - Configuration files can be found on Pointcept ScanNet++ [Configurations](https://github.com/Pointcept/Pointcept/tree/main/configs/scannetpp), e.g. [Validation](https://github.com/Pointcept/Pointcept/blob/main/configs/scannetpp/semseg-pt-v3m1-0-base.py), [Test Submission](https://github.com/Pointcept/Pointcept/blob/main/configs/scannetpp/semseg-pt-v3m1-1-submit.py).
 - A compiled report for all methods can be found on [Wandb](https://api.wandb.ai/links/streakfull-technical-university-of-munich/q1wvl161).
