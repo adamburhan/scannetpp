@@ -118,7 +118,7 @@ def extract_rgb_in_colmap(scene, output_root):
 
 def extract_masks(scene):
     scene.iphone_video_mask_dir.mkdir(parents=True, exist_ok=True)
-    cmd = f"ffmpeg -i {str(scene.iphone_video_mask_path)} -pix_fmt gray -start_number 0 {scene.iphone_video_mask_dir}/frame_%06d.png"
+    cmd = f"ffmpeg -y -i {str(scene.iphone_video_mask_path)} -pix_fmt gray -start_number 0 {scene.iphone_video_mask_dir}/frame_%06d.png"
     run_command(cmd, verbose=True)
 
 def extract_depth(scene):
