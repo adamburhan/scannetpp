@@ -144,6 +144,7 @@ def color_correction_all(
     output_dir: Union[str, Path],
     scene_list: List[str],
     verbose: bool = True,
+    dslr_folder_name: str = "dslr_undistorted_by_iphone",  # ADAM CHANGE: the test-view folder, as evaluate_all's custom_dslr_folder_name
 ) -> Dict[str, Tuple[List[str], List[str]]]:
     """
     Apply color correction to all scenes in the scene list.
@@ -171,7 +172,7 @@ def color_correction_all(
         assert num_images_pred > 0, f"Prediction dir of scene {scene_id} is empty"
 
         # Here we assume the GT images are stored in the data_root / scene_id / "dslr_undistorted_by_iphone" and not "dslr"
-        scene = ScannetppScene_Release(scene_id, data_root=data_root, dslr_folder_name="dslr_undistorted_by_iphone")
+        scene = ScannetppScene_Release(scene_id, data_root=data_root, dslr_folder_name=dslr_folder_name)
 
         # Get the list of test image names: "e.g., DSC09999.JPG"
         # but we need to refer the specific folder which contains DSLR after undistortion by iPhone intrinsic
